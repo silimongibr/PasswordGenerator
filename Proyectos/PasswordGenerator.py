@@ -24,7 +24,5 @@ btn_nivelmedio.grid(row=3, column=0, padx=5, pady=5)
 btn_nivelalto = tk.Button(root, text="Nivel alto", command=lambda: nivel_alto(2))
 btn_nivelalto.grid(row=3, column=1, padx=5, pady=5)
 
-
-
 root.mainloop()
 
