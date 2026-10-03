@@ -14,11 +14,12 @@ root=tk.Tk()
 root.title("Password Generator")
 root.geometry("400x300")
 
+# Etiquetas
 tk.Label(root, text="Generador de Contraseñas").grid(row=0, column=0, columnspan=2, pady=10)
-
 tk.Label(root, text="Seleccciona el nivel de contraseña").grid(row=1, column=0, columnspan=2, pady=5)
 
-btn_nivelmedio = tk.Button(root, text="Nivel medio", command=lambda: nivel_medio(1)) 
+#Botones
+btn_nivelmedio = tk.Button(root, text="Nivel medio de clave", command=lambda: nivel_medio(1)) 
 btn_nivelmedio.grid(row=3, column=0, padx=5, pady=5) 
 
 btn_nivelalto = tk.Button(root, text="Nivel alto", command=lambda: nivel_alto(2))
