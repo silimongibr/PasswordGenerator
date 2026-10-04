@@ -14,11 +14,14 @@ def nivel_medio(nivel):
 
     # Generar una contraseña de nivel medio con numeros y letras minúsculas
     clave_medio = [string.ascii_lowercase, string.digits]
+   
+   # Unir los caracteres en una sola cadena
     clave_medioUnion = ''.join(clave_medio)
 
     password = ""
 
     for i in range(nivel):
+        # Agregar un caracter aleatorio de la cadena de caracteres permitidos
         password += secrets.choice(clave_medioUnion)
 
     
@@ -31,11 +34,13 @@ def nivel_medio(nivel):
 def nivel_alto(nivel):
     messagebox.showinfo("Nivel Alto", f"Se generará contraseña de {nivel} caracteres (letras, números y símbolos).")
     clave_alto = [string.ascii_lowercase, string.ascii_uppercase, string.digits, string.punctuation]
+    # Unir los caracteres en una sola cadena
     clave_altoUnion = ''.join(clave_alto)
 
     password = ""
 
     for i in range(nivel):
+        # Agregar un caracter aleatorio de la cadena de caracteres permitidos
         password += secrets.choice(clave_altoUnion)
 
     password_box.config(state="normal")
